@@ -29,11 +29,17 @@
     font-weight: 700;
     font-style: italic;
   }
+
+  .main {
+    margin-top: 80px;
+  }
+  
+  
   
   body {
     background: #303596;
     color: #fff;
-    padding: 92px;        /* dependiendo de la resolucion */
+    /*padding: 92px;        dependiendo de la resolucion */
     height: 100vh;        /* A escala de la resolucion */
     /* display: flex; */
     justify-content: center;

@@ -1,0 +1,174 @@
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .stint-ultra-condensed-regular {
+    font-family: "Stint Ultra Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.montserrat-regular{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #f4f1ec;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    background-color: #f4f1ec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 2px solid #000000;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 100;
+    margin-left: 30px;
+}
+
+.navbar a {
+    text-decoration: none; /* Removes underline */
+    color: black; /* Ensures text is black */
+    font-weight: 600; /* Makes it bold */
+}
+
+/* Change color on hover (except for ANA CISNEROS) */
+.navbar a:not(.nav-center a):hover {
+    color: gray;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Text Content */
+.text-content {
+    width: 50%;
+}
+
+.title-container {
+    display: flex;
+    align-items: baseline; /* Aligns text properly */
+    gap: 10px; /* Adjusts space between "Hi" and the rest */
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-family: 'times new roman';
+    font-style: italic;
+}
+h2 {
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.separator {
+    font-size: 32px;
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'montserrat';
+    line-height: 1.6;
+    color: #333;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* Image Content */
+.image-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align images to the right */
+    position: relative; /* Needed for precise positioning */
+}
+
+/* Small Image - Adjust Lower */
+.small-img {
+    width: 250px;
+    height: auto;
+    position: relative;
+    top: 80px; /* Push image down */
+    left: -100px; /* Adjust horizontal alignment if needed */
+}
+
+/* Large Image */
+.large-img {
+    width: 300px;
+    height: auto;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px;
+    }
+    
+    .text-content {
+        width: 100%;
+    }
+
+    .image-content {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .small-img, .large-img {
+        width: 80%;
+    }
+}
