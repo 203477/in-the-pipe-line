@@ -1,0 +1,107 @@
+/* Google Fonts "UnifrakturCook" */
+.unifrakturcook-bold {
+    font-family: "UnifrakturCook", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Google Fonts "Space Mono" */
+  .space-mono-regular {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .main {
+    margin-top: 80px;
+  }
+  
+  
+  
+  body {
+    background: #303596;
+    color: #fff;
+    /*padding: 92px;        dependiendo de la resolucion */
+    height: 100vh;        /* A escala de la resolucion */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: medium;
+  } 
+
+  h1, h2, p, li {
+    font-family: "Space Mono", serif;
+    color: #fff;
+  }
+
+  :hover {
+    color: rgb(148, 150, 241);
+  }
+
+  /* tag de html */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(109, 109, 207);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #fff;
+    color: black;
+  }
+
+  /* dot makes a class */
+  .button-danger {
+    background-color: rgb(255, 67, 53);
+  }
+
+  .button-danger:hover {
+    background-color: #fff;
+    color: black;
+  }
+
+  .imagen-redonda {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+    border: 4px solid #352978;
+  }
+
+  .contenedor-imagen {
+    text-align: center;
+    background-color: rgb(183, 202, 255);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
+  }
