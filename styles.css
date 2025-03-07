@@ -50,7 +50,7 @@
   font-family: "Inter", sans-serif;
 }
 
-body{
+body {
   background-color: #f4f1ec;
 }
 
@@ -120,6 +120,12 @@ button:hover {
   color: black;
 }
 
+a, a:visited {
+text-decoration: none;
+color: white;
+}
+
+
 h1 {
   font-size: 60px;
   font-weight: 400;
@@ -127,6 +133,7 @@ h1 {
   font-family: 'times new roman';
   font-style: italic;
 }
+
 h2 {
   font-family: 'montserrat';
   font-weight: 400;
@@ -136,16 +143,15 @@ h2 {
 h3 {
   font-family: "Inter", sans-serif;
   font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .separator {
   font-size: 32px;
   margin: 0 10px;
   font-weight: 400;
-}
-
-li {
-  font-family: "Inter", sans-serif;
 }
 
 p, li {
@@ -155,6 +161,12 @@ p, li {
   color: #333;
   font-weight: 400;
   margin-top: 10px;
+}
+
+li {
+  text-decoration: none;
+  align-items: center;
+  margin: 0 auto;
 }
 
 /* Image Content */
