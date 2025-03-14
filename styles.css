@@ -120,10 +120,6 @@ button:hover {
   color: black;
 }
 
-a, a:visited {
-text-decoration: none;
-color: white;
-}
 
 
 h1 {
@@ -141,7 +137,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Inter", sans-serif;
+  font-family: 'montserrat';
   font-size: 30px;
   display: flex;
   align-items: center;
@@ -192,6 +188,13 @@ li {
   width: 300px;
   height: auto;
 }
+
+
+
+
+
+
+
 
 
 
