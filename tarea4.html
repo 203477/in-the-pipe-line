@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Style Page</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header h2 {
+      font-size: 1.2rem;
+      color: #777;
+    }
+
+    .content {
+      column-count: 2;
+      column-gap: 2rem;
+    }
+
+    .content p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    .app-title {
+      font-weight: bold;
+      margin-top: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #2a2a2a;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tecnología en Aplicaciones Populares</h1>
+      <h2>Lenguajes, Frameworks y País de Origen</h2>
+    </header>
+
+    <div class="content">
+
+      <p class="section-title">¿Qué es Python?</p>
+      <p><strong>Python</strong> es un lenguaje de programación interpretado, de alto nivel y multiparadigma. Fue creado por Guido van Rossum y lanzado en 1991. Es conocido por su sintaxis clara y legible, lo que lo hace ideal tanto para principiantes como para desarrolladores experimentados.</p>
+
+      <p><strong>Características clave:</strong><br>
+      – Interpretado (no requiere compilación previa).<br>
+      – Tipado dinámico.<br>
+      – Soporte para varios paradigmas.<br>
+      – Gran portabilidad.<br>
+      – Amplio ecosistema de bibliotecas.</p>
+
+      <p class="section-title">¿Qué es un lenguaje interpretado?</p>
+      <p>Un lenguaje interpretado no se convierte completamente a código máquina antes de ejecutarse. En lugar de eso, un intérprete lee y ejecuta el código línea por línea. Esto lo hace más flexible, pero a veces más lento que un lenguaje compilado.</p>
+
+      <p><strong>Diferencias:</strong><br>
+      – Interpretado: Python, JavaScript, Ruby.<br>
+      – Compilado: C, C++, Go.</p>
+
+      <p class="section-title">Intérpretes de Python</p>
+      <p>– <strong>CPython:</strong> Intérprete oficial escrito en C.<br>
+      – <strong>PyPy:</strong> Usa compilación JIT para mayor velocidad.<br>
+      – <strong>Jython:</strong> Ejecuta Python en la JVM.<br>
+      – <strong>IronPython:</strong> Integración con .NET.</p>
+    </div>
+  </div>
+</body>
+</html>
