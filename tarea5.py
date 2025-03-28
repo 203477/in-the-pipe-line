@@ -1,4 +1,4 @@
-inventario = []  # Lista vacía para almacenar los productos
+inventario = []  # lista vacía llamada inventario que almacenará todos nuestros productos.
 
 # Función principal 
 def main_menu():
@@ -9,25 +9,25 @@ def main_menu():
     print("4. Modificar producto")
     print("5. Salir")
     
-    choice = input("Seleccione una opción (1-5): ")
-    return choice
+    choice = input("Seleccione una opción (1-5): ")                    #Esta función muestra un menú con 5 opciones y pide al usuario que elija una.
+    return choice                                                      #Devuelve la opción seleccionada como texto (por ejemplo, "1", "2", etc.).
 
 # Función para agregar productos
 def agregar():
     print("\nAgregar producto nuevo")
     name = input("Ingresa el nombre del producto: ")
     
-    try:
-        price = float(input("Ingresa el precio: "))
+    try: 
+        price = float(input("Ingresa el precio: "))                    # "Intenta convertir lo que diga en número"
         quantity = int(input("Ingresa la cantidad: "))
         
-        if price < 0 or quantity < 0:
-            print("Error: No se permiten valores negativos.")
+        if price < 0 or quantity < 0:                                  #el precio o cantidad no puede ser un valor negativo
+            print("Error: No se permiten valores negativos.")          #al usuario se le indica su error
             return
             
-    except ValueError:
-        print("Error: Debes ingresar números válidos.")
-        return
+    except ValueError:                                                 #si es un error de valor, print un mensaje para saber que hizo mal el usuario
+        print("Error: Debes ingresar números válidos.")                
+        return                                                         #y segue con el codigo, no se queda trabado
     
     # Crear diccionario para el nuevo producto
     nuevo_producto = {
@@ -153,3 +153,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

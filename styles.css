@@ -185,6 +185,7 @@ h3 {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  font-weight: 450;
 }
 
 .separator {
@@ -234,15 +235,67 @@ li {
 
 
 
+#contact ul {
+  list-style-type: none; /* This removes the bullet points */
+  padding-left: 0; /* This removes the default padding */
+}
+
+#contact li {
+  margin-bottom: 10px; /* Adds some space between list items */
+}
+
+/* Estilo para todas las secciones principales */
+.main {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+/* Estilo para los párrafos dentro de las secciones */
+.main p {
+  font-size: 20px;
+  font-family: 'montserrat';
+  line-height: 1.6;
+  color: #333;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Estilo para los enlaces en la sección de contacto */
+#contact a {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* Estilo para todas las listas en secciones .main */
+.main ul {
+  list-style-type: "- ";  /* Viñetas personalizadas (guión) */
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.main ul li {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Estilo para los enlaces en listas */
+.main ul li a {
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.main ul li a:hover {
+  background-color: #f0f0f0;
+}
 
 
 
 
 
-
-
-
-/* Responsive Design */
+/* Responsive Design 
 @media (max-width: 900px) {
   .hero {
       flex-direction: column;
@@ -264,3 +317,5 @@ li {
       width: 80%;
   }
 }
+
+*/
