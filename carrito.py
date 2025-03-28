@@ -34,5 +34,5 @@ carrito.agregar_producto ("Leche", 35, 40)
 carrito.mostrar()
 
 
-#arreglar eliminar producto
+#arreglar eliminar producto, cambiar el total del costo, ahorita solo elimina ekprodsucto y no modifica el CARRITO
 #una funcion extra, calculo de iva, descuentos
