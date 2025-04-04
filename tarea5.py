@@ -146,7 +146,7 @@ def main():
         elif choice == "4":
             modificar()
         elif choice == "5":
-            print("\nSaliendo del programa. ¡Hasta luego!")
+            print("\nSaliendo del programa. ¡Bye-bye!")
             break
         else:
             print("\nOpción inválida. Por favor intenta nuevamente.")
@@ -155,3 +155,7 @@ if __name__ == "__main__":
     main()
 
 
+# Añadir funciones 
+# Modificar productos 
+# Función para pagar y devolver el carro 
+# Una función extra
