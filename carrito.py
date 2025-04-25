@@ -17,7 +17,7 @@ class Carrito:
         self.cantidad += cantidad
         self.total += precio * cantidad
 
-    def modificar_producto(self, nombre, nueva_cantidad):
+    def modificar_producto(self, nombre, nueva_cantidad):          
         if nombre in self.productos:
             producto = self.productos[nombre]
             diferencia = nueva_cantidad - producto['cantidad']
@@ -33,6 +33,12 @@ class Carrito:
         else:
             print(f"El producto '{nombre}' no está en el carrito.")
 
+    
+    def mostrar(self):
+        print("\n==== CARRITO ====")
+        print(self.productos)
+        print(f"Total de productos: {self.cantidad} - Total a pagar: ${self.total}")
+
     def pagar(self):
         print("\nOpciones de pago:")
         print("1. Tarjeta (3% de comisión)")
@@ -47,7 +53,7 @@ class Carrito:
             print("Pago en efectivo seleccionado. No se aplica comisión.")
         else:
             print("Método de pago no válido. Intente de nuevo.")
-            return self.pagar()  # Volver a preguntar por el método de pago
+            return self.pagar()                                                        # Volver a preguntar por el método de pago
 
         print(f"\nTotal a pagar: ${self.total:.2f}")
         print("Gracias por su compra!")
@@ -55,22 +61,14 @@ class Carrito:
         self.cantidad = 0
         self.total = 0
 
-    def aplicar_descuento(self, cantidad_minima, porcentaje_descuento):
-        if self.cantidad >= cantidad_minima:  # Verifica si la cantidad cumple con el mínimo requerido
-            descuento = self.total * (porcentaje_descuento / 100)
-            self.total -= descuento
-            print(f"Se aplicó un descuento del {porcentaje_descuento}%. Total con descuento: ${self.total:.2f}")
-        else:
-            print(f"No se alcanzó la cantidad mínima de {cantidad_minima} productos para aplicar el descuento.")
 
-    def mostrar(self):
-        print("\n==== CARRITO ====")
-        for nombre, detalles in self.productos.items():
-            print(f"{nombre}: {detalles['cantidad']} unidades - ${detalles['precio']} c/u")
-        print(f"Total de productos: {self.cantidad} - Total a pagar: ${self.total}")
+ #   def aplicar_descuento(self, porcentaje):
+  #      descuento = self.total * (porcentaje / 100)
+   #     self.total -= descuento
+    #    print(f"Se aplicó un descuento del {porcentaje}%. Total a pagar: ${self.total:.2f}")
 
 
-# Ejemplo de uso interactivo
+1
 carrito = Carrito()
 
 productos_disponibles = {
