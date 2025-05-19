@@ -163,7 +163,31 @@ button:hover {
   color: black;
 }
 
+#text {
+  h1{
+    color: rgb(105, 48, 48);
+  }
 
+  font-size: 20px;
+  font-family: 'montserrat';
+  line-height: 1.6;
+
+  button {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: rgb(105, 48, 48);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: black; 
+}
+}
 
 h1 {
   font-size: 60px;
