@@ -128,12 +128,16 @@
 
     // run the webcam image through the image model
     async function predict() {
-        // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
         for (let i = 0; i < maxPredictions; i++) {
-            const classPrediction =
-                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-            labelContainer.childNodes[i].innerHTML = classPrediction;
+            const percent = Math.round(prediction[i].probability * 100);
+            labelContainer.childNodes[i].innerHTML = `
+                <div style="font-weight: 600;">${prediction[i].className}</div>
+                <div style="background-color: #eee; border-radius: 10px; height: 20px; width: 80%; margin: 5px auto;">
+                    <div style="background-color: #4caf50; height: 100%; width: ${percent}%; border-radius: 4px;"></div>
+                </div>
+                <div>${percent}%</div>
+            `;
         }
     }
 </script>
